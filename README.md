@@ -19,7 +19,12 @@ cd ..
 ```
 You will have DELPHES.root 
 
-## Step3: project on a MxM "image"
+## Step3: Produce flat tree for nanoAOD-like analysis
+```
+./run.py delphes2FlatTuple.C INPUT.root OUTPUT.root
+```
+
+## Under development: project on a MxM "image"
 We use NERSC's script to convert Delphes root files to hdf5 with image projections.
 - File names should be in a form of SAMPLENAME-SUFFIX.root
 - SAMPLENAME should be in the cross section table, config/DelphesXSec
